@@ -13,11 +13,16 @@ const sum = computed(() => {
 const largeThen4 = computed(() => {
   return list.value.filter(item => item > 4)
 })
+
+const push = () => {
+  list.value.push(7)
+}
 </script>
 
 <template>
   <div>{{list}}-{{ message }}</div>
   <button >数组的和{{ sum }}</button>
   <div>大于4的数组是{{ largeThen4 }}</div>
+  <button @click="push">push</button>
 </template>
 
