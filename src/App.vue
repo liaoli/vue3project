@@ -1,8 +1,3 @@
-
-
-
-
-
 <script setup>
 import { onMounted, ref } from 'vue'
 import TestCom  from '@/components/test-com.vue'
